@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <nav id="profile-nav">
+        <header><a href="index.html">ALLINONE</a></header>
+    </nav>
+    <section id="profile-section">
+        <header>
+            <h1 id="profile-owner"></h1>
+        </header>
+        <div id="edit-profile">
+            <form class="">
+                <div class="card-inputs">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required />
+                </div>
+                <div class="card-inputs">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" required />
+                </div>
+                <button type="submit" class="btn profile-btns" id="save-info">Save Info</button>
+                <p id="error-message"></p>
+            </form>
+        </div>
+        <header>
+            <h1>Edit Password</h1>
+        </header>
+        <div id="edit-password">
+            <form class="">
+                <div class="card-inputs">
+                    <label for="old-password">Current Password</label>
+                    <input type="password" id="old-password" required />
+                </div>
+                <div class="card-inputs">
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" required />
+                </div>
+                <div class="card-inputs">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required />
+                </div>
+                <button type="submit" class="btn profile-btns" id="save-password">Save Password</button>
+            </form>
+            <button class="btn profile-btns" id="logout">Logout</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
